@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>5.订单详情</title>
+    <link rel="stylesheet" href="css/project.min.css">
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-yoo navbar-fixed-top" role="navigation">
+    <div class=" search-bar container">
+        <div class="row">
+            <div class="col-xs-8">
+                <form class="navbar-form " role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="搜索热门产品">
+                    <span class="input-group-btn">
+                        <a type="button" class="btn btn-default" href="javascript:;"><span class="glyphicon glyphicon-search"></span></a>
+                    </span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-3 text-right">
+                <a type="button" class="btn orderlist-link"  href="javascript:;">我的订单</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="dropdown  hidden-xs">
+                <a class="dropdown-toggle " data-toggle="dropdown" href="javascript:;">
+                    热门目的地 <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="active"><a href="javascript:;">广州</a></li>
+                    <li><a href="javascript:;">深圳</a></li>
+                    <li><a href="javascript:;">珠海</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="javascript:;">周边游</a></li>
+            <li><a href="javascript:;">跟团游</a></li>
+            <li><a href="javascript:;">亲子游</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container over-x">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="user-profile">
+                <div class="pull-left">
+                    <i class="ico_default_head" href="#"></i>
+                </div>
+                <div class="pull-left">
+                    <b class="h4">18102263470</b>
+                    <h5>游客</h5>
+                </div>
+
+            </div>
+
+            <div class="list-group orderlist-group hidden-xs">
+                <a href="#" class="list-group-item active">
+                    订单中心
+                </a>
+                <a href="#" class="list-group-item">全部订单</a>
+                <a href="#" class="list-group-item">
+                    <span class="badge badge-warn">3</span>
+                    未使用
+                </a>
+                <a href="#" class="list-group-item">
+                    <span class="badge badge-dang">2</span>
+                    待付款
+                </a>
+                <a href="#" class="list-group-item">退款单</a>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="panel orderlist-info">
+                <div class="panel-body">
+                    <div class="page-header">
+                        <h4>订单信息</h4>
+                    </div>
+                    <dl>
+                        <dt>订 单 号：</dt>
+                        <dd>121141229856458</dd>
+                    </dl>
+                    <dl>
+                        <dt>订单状态：</dt>
+                        <dd class="text-dang">待支付</dd>
+                    </dl>
+                    <dl>
+                        <dt>订单数量：</dt>
+                        <dd>2张</dd>
+                    </dl>
+                </div>
+                <div class="panel-body">
+                    <div class="page-header">
+                        <h4>产品信息</h4>
+                    </div>
+                    <dl>
+                        <dt>产 品 名：</dt>
+                        <dd class="text-warn">光华假日酒店 </dd>
+                    </dl>
+                    <dl>
+                        <dt>出游日期：</dt>
+                        <dd class="text-dang">2016.03.05</dd>
+                    </dl>
+                </div>
+                <div class="panel-body">
+                    <div class="page-header">
+                        <h4>电子券 <small>有效期至2015-12-30</small></h4>
+                    </div>
+                    <dl>
+                        <dt>劵号 01：</dt>
+                        <dd>1352 1245 3013 </dd>
+                    </dl>
+                    <dl>
+                        <dt>劵号 02：</dt>
+                        <dd>1352 1245 3013 </dd>
+                    </dl>
+                </div>
+                <div class="panel-body expenses-list">
+                    <div class="page-header">
+                        <h4>费用明细</h4>
+                    </div>
+                    <h5>基本费用：</h5>
+                    <div class="row dashed-btm">
+                        <div class="col-sm-6">
+                            酒店：<span>光华假日酒店</span>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <b class="rmb text-warn">318</b>/间x1
+                        </div>
+                    </div>
+
+                    <h5>优惠折扣：</h5>
+                    <div class="row">
+                        <div class="col-xs-6">优币抵扣：</div>
+                        <div class="col-xs-6 text-right text-warn">-<b class="rmb">5.00</b></div>
+                    </div>
+                    <div class="row dashed-btm">
+                        <div class="col-xs-6">优券抵扣：</div>
+                        <div class="col-xs-6 text-right text-warn">-<b class="rmb">2.00</b></div>
+                    </div>
+                    <div class="row expenses-list-total">
+                        <div class="col-xs-6">订单实付总额：</div>
+                        <div class="col-xs-6 text-right text-warn"><b class="rmb h3">311</b></div>
+                    </div>
+                </div>
+                <div class="row panel-body">
+                    <div class="col-xs-6 text-right">
+                        <a href="javascript:;" type="button" class="btn btn-hl">立即支付</a>
+                    </div>
+                    <div class="col-xs-6 text-left">
+                        <a href="javascript:;" type="button" class="btn btn-cancel">取消订单</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>3.购买页</title>
+    <link rel="stylesheet" href="css/project.min.css">
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-yoo navbar-fixed-top" role="navigation">
+    <div class=" search-bar container">
+        <div class="row">
+            <div class="col-xs-8">
+                <form class="navbar-form " role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="搜索热门产品">
+                    <span class="input-group-btn">
+                        <a type="button" class="btn btn-default" href="javascript:;"><span class="glyphicon glyphicon-search"></span></a>
+                    </span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-3 text-right">
+                <a type="button" class="btn orderlist-link"  href="javascript:;">我的订单</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="dropdown  hidden-xs">
+                <a class="dropdown-toggle " data-toggle="dropdown" href="javascript:;">
+                    热门目的地 <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="active"><a href="javascript:;">广州</a></li>
+                    <li><a href="javascript:;">深圳</a></li>
+                    <li><a href="javascript:;">珠海</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="javascript:;">周边游</a></li>
+            <li><a href="javascript:;">跟团游</a></li>
+            <li><a href="javascript:;">亲子游</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container over-x">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="panel">
+                <div class="panel-body">
+                    <h4> 广州威珀斯酒店+天河花城汇环球魔幻世界2大1小亲子家庭游</h4>
+                    <span class="tag-m">商务公寓大床1间1晚</span>
+                    <div class="booking-msg">
+                        <h5>出游日期：</h5>
+                        <dl>
+                            <dt class="booking-date">2016-09-28</dt>
+                            <dd class="p-secondary">星期三</dd>
+                        </dl>
+                        <h5>价格明细：</h5>
+                        <dl>
+                            <dt>购买数量</dt>
+                            <dd>￥2300.00x1</dd>
+                        </dl>
+                    </div>
+                    <div class="total-price">
+                        <span class="pull-left">总价:</span>
+                        <span class="pull-right rmb">2300</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="panel bd-section">
+                <div class="panel-body dashed-btm">
+                    <h4>旅客信息</h4>
+                    <h5 class="p-secondary"><i class="ico_explain"></i>请确保您填写的信息真实准确，否则会影响您的顺利出行。</h5>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label required-field" for="name">姓　名</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" type="text" id="name" placeholder="请输入姓名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label required-field" for="phone">手　机</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" type="text" id="phone" placeholder="请输入手机号码">
+                            </div>
+                            <div class="col-sm-4">
+                                <p class="p-secondary hintmsg">（免费接收确认信息）</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="validateCode" class="col-sm-2 control-label required-field">验证码</label>
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="validateCode" placeholder="请输入验证码">
+                                    <span class="input-group-btn">
+                                        <a href="javascript:;" class="btn btn-codeimg" type="button"><img src="imaTmp/code-tmp.gif"/></a>
+                                      </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="validateCode" class="col-sm-2 control-label required-field">动态码</label>
+                            <div class="col-sm-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="randomCode" placeholder="请输入动态码">
+                                    <span class="input-group-btn">
+                                        <a href="javascript:;" class="btn btn-code" type="button">获取验证码</a>
+                                      </span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-body">
+                    <h4>备注</h4>
+                    <h5 class="p-secondary"><i class="ico_explain"></i>如有其它需求，请在此说明。</h5>
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <div class="orderlist-total clearfix">
+                    <span class="rmb pull-left">2300</span>
+                    <a href="javascript:;" class="pull-right btn-booking">立即预订</a>
+                </div>
+            </div>
+            <h4 class="rules-title">预订须知</h4>
+            <div class="panel bd-section rules-wrap">
+                <div class="panel-body">
+                    <div class="rules-box">
+                        <h5>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                <span class="h5"> 同意电子合同及有效性，无需再次签署纸质合同</span>
+                            </label>
+                        </h5>
+                        <p>本产品最低成团人数5人，如未达到最低成团人数，携程将在出发前7天通知不成团，未通知的视为成团。如不成团，携程会为您推荐其他出发班期或更换其他同类产品（相关损失或差价由携程承担），如您不接受上述方案，携程将全额退还您支付的费用。 * 如因航空公司运力调配、航权审核、机场临时关闭、天气原因、航空管制等不可控制或其他不可抗拒力导致航班取消或延期的，携程不承担违约责任，携程将尽最大努力协助您办理变更事宜，如产生差价， 多退少补。 * 德天景区内有当地边民经营的自费竹筏项目30元/人，此项目是德天景区自发组织，非携程团队游行程包含，客人如有兴趣请自行和边民协商，携程导游不作推荐，敬请知晓。中越53号界碑附近有越南集市，越南边民在此摆摊销售，此项目非携程团队游中的购物项目，为德天景区自发组织，您可自行购买越南特产，携程导游不作推荐，敬请知晓。 * 本产品最低成团人数5人，如未达到最低成团人数，携程将在出发前7天通知不成团，未通知的视为成团。如不成团，携程会为您推荐其他出发班期或更换其他同类产品（相关损失或差价由携程承担），如您不接受上述方案，携程将全额退还您支付的费用。 * 如因航空公司运力调配、航权审核、机场临时关闭、天气原因、航空管制等不可控制或其他不可抗拒力导致航班取消或延期的，携程不承担违约责任，携程将尽最大努力协助您办理变更事宜，如产生差价， 多退少补。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

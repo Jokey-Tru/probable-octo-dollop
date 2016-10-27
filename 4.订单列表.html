@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>4.订单列表</title>
+    <link rel="stylesheet" href="css/project.min.css">
+</head>
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-yoo navbar-fixed-top" role="navigation">
+    <div class=" search-bar container">
+        <div class="row">
+            <div class="col-xs-8">
+                <form class="navbar-form " role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="搜索热门产品">
+                    <span class="input-group-btn">
+                        <a type="button" class="btn btn-default" href="javascript:;"><span class="glyphicon glyphicon-search"></span></a>
+                    </span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-3 text-right">
+                <a type="button" class="btn orderlist-link"  href="javascript:;">我的订单</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="dropdown  hidden-xs">
+                <a class="dropdown-toggle " data-toggle="dropdown" href="javascript:;">
+                    热门目的地 <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="active"><a href="javascript:;">广州</a></li>
+                    <li><a href="javascript:;">深圳</a></li>
+                    <li><a href="javascript:;">珠海</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="javascript:;">周边游</a></li>
+            <li><a href="javascript:;">跟团游</a></li>
+            <li><a href="javascript:;">亲子游</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container over-x">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="user-profile">
+                <div class="pull-left">
+                    <i class="ico_default_head" href="#"></i>
+                </div>
+                <div class="pull-left">
+                    <b class="h4">18102263470</b>
+                    <h5>游客</h5>
+                </div>
+
+            </div>
+
+            <div class="list-group orderlist-group hidden-xs">
+                <a href="#" class="list-group-item active">
+                    订单中心
+                </a>
+                <a href="#" class="list-group-item">全部订单</a>
+                <a href="#" class="list-group-item">
+                    <span class="badge badge-warn">3</span>
+                    未使用
+                </a>
+                <a href="#" class="list-group-item">
+                    <span class="badge badge-dang">2</span>
+                    待付款
+                </a>
+                <a href="#" class="list-group-item">退款单</a>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="panel">
+                <div class="panel-body">
+                    <!-- nav-tabs-hltinline -->
+                    <ul class="nav nav-tabs-hltinline"  role="tablist">
+                        <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab">全部订单</a></li>
+                        <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab">待出行</a></li>
+                        <li role="presentation"><a href="#tab3" role="tab" data-toggle="tab">待付款</a></li>
+                        <li role="presentation"><a href="#tab4" role="tab" data-toggle="tab">退款单</a></li>
+                    </ul>
+
+                    <div class="hidden-xs filter-bar">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label" for="input1">订单号</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="input1" placeholder="输入订单号">
+                                </div>
+                                <label class="col-sm-2 control-label" for="input2">预订日期</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="input2" placeholder="YYYY-MM-DD">
+                                </div>
+                                <div class="col-sm-1 line-s">-</div>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="input3" placeholder="YYYY-MM-DD">
+                                </div>
+                                <div class="col-sm-2">
+                                    <a type="submit" class="btn btn-m" href="javascript:;">查 询</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="tab1">
+                            <div class="item-section ">
+                                <div class="dashed-btm">
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <span class="p-secondary">单号：</span>
+                                            1211304242400
+                                        </div>
+                                        <div class="col-xs-5 text-right">
+                                            <span class="p-secondary">2015-01-30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row orderlist-item solid-btm">
+                                    <div class="col-xs-9">
+                                        <div class="media">
+                                            <a class="media-left media-middle" href="#">
+                                                <img src="imaTmp/400x240v1.jpg" alt="...">
+                                            </a>
+                                            <div class="media-body">
+                                                <h5 class="media-heading">台山下川岛桂圆酒店三天两晚双人自助游</h5>
+                                                <span>套票</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 text-right">
+                                        <b class="h3 rmb text-dang">668</b>
+                                        <p class="p-secondary">待出行</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-section ">
+                                <div class="dashed-btm">
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <span class="p-secondary">单号：</span>
+                                            1211304242400
+                                        </div>
+                                        <div class="col-xs-5 text-right">
+                                            <span class="p-secondary">2015-01-30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row orderlist-item solid-btm">
+                                    <div class="col-xs-9">
+                                        <div class="media">
+                                            <a class="media-left media-middle" href="#">
+                                                <img src="imaTmp/400x240v2.jpg" alt="...">
+                                            </a>
+                                            <div class="media-body">
+                                                <h5 class="media-heading">台山下川岛桂圆酒店三天两晚双人自助游</h5>
+                                                <span>套票</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 text-right">
+                                        <b class="h3 rmb text-dang">668</b>
+                                        <p class="p-secondary">待出行</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-section ">
+                                <div class="dashed-btm">
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <span class="p-secondary">单号：</span>
+                                            1211304242400
+                                        </div>
+                                        <div class="col-xs-5 text-right">
+                                            <span class="p-secondary">2015-01-30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row orderlist-item solid-btm">
+                                    <div class="col-xs-9">
+                                        <div class="media">
+                                            <a class="media-left media-middle" href="#">
+                                                <img src="imaTmp/400x240v3.jpg" alt="...">
+                                            </a>
+                                            <div class="media-body">
+                                                <h5 class="media-heading">台山下川岛桂圆酒店三天两晚双人自助游</h5>
+                                                <span>套票</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 text-right">
+                                        <b class="h3 rmb text-dang">668</b>
+                                        <p class="p-secondary">待出行</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="tab2">待出行待出行</div>
+                        <div role="tabpanel" class="tab-pane" id="tab3">待付款待付款</div>
+                        <div role="tabpanel" class="tab-pane" id="tab4">退款单退款单</div>
+                    </div>
+                </div>
+                <div class="panel-body ">
+                    <ul class="pagination pull-right ">
+                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">上一页</span></a></li>
+                        <li class="active"><a href="javascript:;">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="javascript:;">2</a></li>
+                        <li><a href="javascript:;">3</a></li>
+                        <li><a href="javascript:;">…</a></li>
+                        <li><a href="javascript:;">12</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">下一页</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</html>
